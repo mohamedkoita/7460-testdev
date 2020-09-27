@@ -12,6 +12,7 @@ public class TransfertTest {
         Transfert trans1 = new Transfert(10000, "Maman", "Mohamed", 230);
         Transfert transEx = new Transfert(10000, "Maman", "Mohamed", 230);
 
+
         assertEquals(transEx, trans1.conf(230));
 
 
