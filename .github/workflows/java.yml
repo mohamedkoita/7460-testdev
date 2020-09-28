@@ -19,7 +19,7 @@ jobs:
         uses: actions/caches@v2
         with:
           path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hash('**/pom.xml') }}
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
 
       - name: Build with Maven
