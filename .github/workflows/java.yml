@@ -19,7 +19,7 @@ jobs:
         uses: actions/caches@v2
         with:
           path: ~/.m2
-          key: ${{ runner.os }}-m2
+          key: ${{ runner.os }}-m2-${{ hash('**/pom.xml') }}
 
       - name: Build with Maven
         run: mvn -B package --file pom.xml
