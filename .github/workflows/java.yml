@@ -1,6 +1,8 @@
 name: Integration continue Java
 
-on: [push]
+on:
+  schedule:
+    - cron: '5 * * * *'
 
 jobs:
   build_java:
