@@ -6,18 +6,18 @@ public class Main {
     public static void main(String[] args)
     {
         Scanner myObj = new Scanner(System.in);
-        Transfert trans = new Transfert(10000, "Maman", "Mohamed", 230);
+        Transfert trans = new Transfert(10000, "Mama", "Mohamed", 230);
 
-        System.out.print("Veuillez entrer le mot de passe du transfert");
+        System.out.print("SVP entre le mot de passe du transfer");
         int passwd = myObj.nextInt();
 
-        int geti = trans.getPassword();
+        int gets = trans.getPassword();
 
 
-        if ( geti == passwd) {
+        if ( gets == passwd) {
             System.out.print(trans);
         } else {
-            System.out.print("Transfert inexistant");
+            System.out.print("Transfer missed");
         }
 
 
