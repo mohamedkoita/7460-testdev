@@ -27,6 +27,9 @@ jobs:
       - name: Check with CheckStyle
         run: mvn checkstyle:checkstyle
 
+      - name: Check with PMD
+        run: mvn pmd:pmd
+
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
